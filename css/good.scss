@@ -947,11 +947,91 @@ header {
 
     }
 
-    a {
-      text-decoration: none;
-      color: white;
-      background-color: #571F9C;
-      padding: 18px 40px;
+    .abcd {
+      justify-content: center;
+      margin-top: 25px;
+  
+      .for-bg {
+        background: #571F9C;
+        padding: 10px 30px;
+        transition: .2s ease-in-out;
+        cursor: pointer;
+        position: relative;
+  
+        .line1 {
+          position: absolute;
+          top: -5px;
+          left: -5px;
+          width: 0%;
+          height: 2px;
+          background-color: #571F9C;
+          transition: .2s ease-in-out;
+        }
+  
+        .line2 {
+          position: absolute;
+          top: -5px;
+          left: -5px;
+          width: 2px;
+          height: 0%;
+          background-color: #571F9C;
+          transition: .2s ease-in-out;
+        }
+  
+        .line3 {
+          position: absolute;
+          right: -5px;
+          bottom: -5px;
+          width: 2px;
+          height: 0%;
+          background-color: #571F9C;
+          transition: .2s ease-in-out;
+        }
+  
+        .line4 {
+          position: absolute;
+          bottom: -5px;
+          right: -5px;
+          width: 0%;
+          height: 2px;
+          background-color: #571F9C;
+          transition: .2s ease-in-out;
+        }
+  
+        &:hover {
+          background: #4b1c85;
+  
+          .line1 {
+            width: 60%;
+          }
+  
+          .line2 {
+            height: 80%;
+          }
+  
+          .line3 {
+            height: 80%;
+          }
+  
+          .line4 {
+            width: 80%;
+          }
+        }
+  
+        a {
+          text-decoration: none;
+          color: white;
+          font-weight: 400;
+  
+        }
+  
+        i {
+          font-size: 15px;
+          color: white;
+          padding-left: 15px;
+        }
+      }
+  
     }
   }
 

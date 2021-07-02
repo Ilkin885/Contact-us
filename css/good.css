@@ -919,11 +919,96 @@ header .top-page .right-part i {
   padding-bottom: 30px;
 }
 
-.building .left a {
+.building .left .abcd {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 25px;
+}
+
+.building .left .abcd .for-bg {
+  background: #571F9C;
+  padding: 10px 30px;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+  position: relative;
+}
+
+.building .left .abcd .for-bg .line1 {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: #571F9C;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.building .left .abcd .for-bg .line2 {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 2px;
+  height: 0%;
+  background-color: #571F9C;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.building .left .abcd .for-bg .line3 {
+  position: absolute;
+  right: -5px;
+  bottom: -5px;
+  width: 2px;
+  height: 0%;
+  background-color: #571F9C;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.building .left .abcd .for-bg .line4 {
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: #571F9C;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.building .left .abcd .for-bg:hover {
+  background: #4b1c85;
+}
+
+.building .left .abcd .for-bg:hover .line1 {
+  width: 60%;
+}
+
+.building .left .abcd .for-bg:hover .line2 {
+  height: 80%;
+}
+
+.building .left .abcd .for-bg:hover .line3 {
+  height: 80%;
+}
+
+.building .left .abcd .for-bg:hover .line4 {
+  width: 80%;
+}
+
+.building .left .abcd .for-bg a {
   text-decoration: none;
   color: white;
-  background-color: #571F9C;
-  padding: 18px 40px;
+  font-weight: 400;
+}
+
+.building .left .abcd .for-bg i {
+  font-size: 15px;
+  color: white;
+  padding-left: 15px;
 }
 
 .building .right {
